@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".Login_activity">
+    tools:context=".SignUp">
 
     <ImageView
         android:id="@+id/girl"
@@ -27,7 +27,6 @@
         app:layout_constraintStart_toStartOf="@id/main"
         app:layout_constraintTop_toTopOf="@+id/main"
         app:tint="@color/light_green" />
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tly"
@@ -64,19 +63,54 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tly3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="@id/guia2"
+        app:layout_constraintStart_toStartOf="@id/guia1"
+        app:layout_constraintTop_toBottomOf="@id/tly2"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_pass">
+
+        <EditText
+            android:id="@+id/confirmpass"
+            android:hint="Confirm Password"
+            style="@style/editPass" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tly4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="@id/guia2"
+        app:layout_constraintStart_toStartOf="@id/guia1"
+        app:layout_constraintTop_toBottomOf="@id/tly3"
+        app:startIconDrawable="@drawable/ic_email">
+
+        <EditText
+            android:id="@+id/email"
+            android:hint="Email"
+            style="@style/editEmail" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/boton1"
         style="@style/buttonLog"
-        android:text="Login"
+        android:text="Sign Up"
         app:layout_constraintEnd_toStartOf="@id/guia2"
         app:layout_constraintStart_toStartOf="@id/guia1"
-        app:layout_constraintTop_toBottomOf="@id/tly2" />
+        app:layout_constraintTop_toBottomOf="@id/tly4" />
 
     <Button
         android:id="@+id/boton2"
         style="@style/buttonOut"
-        android:text="Sign Up"
-        android:onClick="openSignup"
+        android:text="Cancel"
+        android:onClick="cancel"
         app:layout_constraintEnd_toStartOf="@+id/guia2"
         app:layout_constraintStart_toEndOf="@id/guia1"
         app:layout_constraintTop_toBottomOf="@id/boton1" />

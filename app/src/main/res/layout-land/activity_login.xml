@@ -12,7 +12,7 @@
         android:id="@+id/girl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/gradient"
+        android:alpha="0.7"
         android:scaleType="fitStart"
         android:src="@drawable/girl" />
 
@@ -41,12 +41,8 @@
 
         <EditText
             android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:background="@color/white"
             android:hint="Username"
-            android:maxLines="1" />
+            style="@style/editUser" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,39 +59,27 @@
 
         <EditText
             android:id="@+id/paswword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:background="@color/white"
-            android:inputType="textPassword"
             android:hint="Password"
-            android:maxLines="1"/>
+            style="@style/editPass"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/boton1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        style="@style/buttonLog"
         android:text="Login"
         app:layout_constraintEnd_toStartOf="@id/guia2"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/guia1"
-        app:layout_constraintTop_toBottomOf="@id/tly2"
-        app:layout_constraintVertical_bias="0.266"
-        app:layout_constraintVertical_chainStyle="packed"
-        app:shapeAppearance="0" />
+        app:layout_constraintTop_toBottomOf="@id/tly2" />
 
     <Button
         android:id="@+id/boton2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        style="@style/buttonOut"
         android:text="Registrarse"
+        android:onClick="openSignup"
         app:layout_constraintEnd_toStartOf="@+id/guia2"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@id/guia1"
-        app:layout_constraintTop_toBottomOf="@id/boton1"
-        app:shapeAppearance="0" />
+        app:layout_constraintTop_toBottomOf="@id/boton1"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guia1"
