@@ -68,6 +68,7 @@
         android:id="@+id/boton1"
         style="@style/buttonLog"
         android:text="Login"
+        android:onClick="Login"
         app:layout_constraintEnd_toStartOf="@id/guia2"
         app:layout_constraintStart_toStartOf="@id/guia1"
         app:layout_constraintTop_toBottomOf="@id/tly2" />
