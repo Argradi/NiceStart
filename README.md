@@ -3,4 +3,4 @@
 Las siguientes, son las dos pantallas del proyecto:
 
 ![imagen](img/captura.png)
-![imagen](img/captura2.png)
+![imagen2](img/captura2.png)
