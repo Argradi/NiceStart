@@ -1,8 +1,7 @@
 ## Este es el primer proyecto en el que estoy trabajando
-======================
 
-Las siguientes, son las dos pantallas del proyecto:
-----
+# Las siguientes, son las dos pantallas del proyecto:
+
 
 En la primera encontramos dos campos editables(usuario y contraseña) y dos botones(login y signup).
 Este ultimo boton, al pulsarlo dirigira a la segunda pantalla y al pulsar en login nos dirigira a una pantalla en la que estoy trabajando.
