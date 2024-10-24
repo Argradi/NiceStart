@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Profile_activity">
+
+    <ImageView
+        android:id="@+id/user"
+        style="@style/usuario"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toBottomOf="@id/nom" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:text="Argradi"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/main"
+        style="@style/Nombre" />
+
+    <TextView
+        android:id="@+id/bio"
+        style="@style/bio"
+        android:text="Estudiante de DAM"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toBottomOf="@id/user" />
+
+    <TextView
+        android:id="@+id/info"
+        android:text="Seguimos añadiendo elementos a este proyecto"
+        app:layout_constraintEnd_toEndOf="@id/main"
+        app:layout_constraintStart_toStartOf="@id/main"
+        app:layout_constraintTop_toBottomOf="@id/bio"
+        style="@style/info" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
