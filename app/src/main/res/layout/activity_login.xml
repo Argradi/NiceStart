@@ -18,15 +18,13 @@
 
     <ImageView
         android:id="@+id/imagen"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="36dp"
         android:src="@drawable/ic_action_name"
         app:layout_constraintEnd_toEndOf="@id/main"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@id/main"
         app:layout_constraintTop_toTopOf="@+id/main"
-        app:tint="@color/light_green" />
+        app:tint="@color/light_green"
+        style="@style/logo" />
 
 
     <com.google.android.material.textfield.TextInputLayout
