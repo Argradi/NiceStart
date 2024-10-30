@@ -7,5 +7,4 @@
     android:toXDelta="5%"
     android:toYDelta="2%"
     android:startOffset="1000">
-
 </translate>
