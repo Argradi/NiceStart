@@ -6,7 +6,7 @@ La primera pantalla que veremos es esta, incluyen el logo de la aplicacion, con 
 y el titulo, con una animacion que le hace aparecer en la pantalla. Esta pantalla tiene una duracion de 5 segundos para que se 
 pueda apreciar la animacion de los componentes claramente.
 
-![imagen](img/Inicio.jpg)
+![imagen](img/Inicio.png)
 
 En la suiguiente encontramos dos campos editables(usuario y contraseña) y dos botones(login y signup).
 Este ultimo boton, al pulsarlo dirigira a la pantalla de Sign Up y al pulsar en login nos dirigira a una pantalla de usuario.
