@@ -15,7 +15,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 public class Splash_activity extends AppCompatActivity {
 
@@ -27,7 +26,7 @@ public class Splash_activity extends AppCompatActivity {
         openApp();
 
         ImageView logo=findViewById(R.id.imagen);
-        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.rotar);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.salto_giro);
         logo.startAnimation(myanim);
 
         TextView texto=findViewById(R.id.NC);
