@@ -1,6 +1,6 @@
 # Este es el primer proyecto en el que estoy trabajando
 
-:construction:Proyecto en cronstruccion:contruction:
+:construction:Proyecto en cronstruccion:construction:
 
 La primera pantalla que veremos es esta, incluyen el logo de la aplicacion, con una animacion que simula que salta mientras gira,
 y el titulo, con una animacion que le hace aparecer en la pantalla. Esta pantalla tiene una duracion de 5 segundos para que se 
