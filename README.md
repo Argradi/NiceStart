@@ -15,21 +15,23 @@ En la suiguiente encontramos dos campos editables(usuario y contraseña) y dos b
 ![imagen](img/captura1.png)
 
 Si pulsamos login nos llevara a una pantalla en la que aparece una imagen de una persona que no existe y
-tenemos la opcion de refrescar la pantalla para que nos muestre otra imagen.
+tenemos la opcion de refrescar la pantalla para que nos muestre otra imagen y un toast que diga:"Hi there! I don't exist :)".
+
+![imagen](img/Main2.jpg)
 
 Si mantenemos pulsado nos saldra un pequeño menu que dice "copy" y "download", en los cuales ,si pulsamos,
 nos aparecera un toast con la opcion elegida.
 
-En esta pantalla tambien hay dos botones en la esquina superior derecha, aunque no se pueden apreciar muy bien.
+![imagen](img/Manten2.jpg)
+![imagen](img/Cop2.jpg)
+![imagen](img/Down2.jpg)
 
-Si pulsamos el primero de ellos saldra un toast que dira "Infecting".
+En esta pantalla tambien hay dos botones en la esquina superior derecha, aunque no se pueden apreciar muy bien, y
+abre otro pequeño menu con tres ociones.
 
-El segundo boton abre otro pequeño menu con tres ociones.
+![imagen](img/Menu_appbar2.jpg)
 
-Si pulsamos las dos primeras opciones tambien saldra "Infecting".
-
-Pero si pulsamos la tercera opcion nos llevara a la pantalla del perfil del usuario.
-
+Si pulsamos la tercera opcion nos llevara a la pantalla del perfil del usuario.
 
 Si en la primera pantalla pulsamos Sign Up nos dirigira a la pantalla de Sign Up.
 En esta pantalla encontramos cuatro campos editables(usuario, contraseña, confirmar contraseña y email)

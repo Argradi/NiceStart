@@ -23,6 +23,7 @@ public class Profile_activity extends AppCompatActivity {
         ImageView mgirl= findViewById(R.id.user);
 
         Glide.with(this)
+                //.load(R.raw.swing)
                 .load("https://images.unsplash.com/photo-1522956957021-9f2437e01594?q=80&w=1957&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
                 .transition(DrawableTransitionOptions.withCrossFade(1000))
                 .centerCrop()

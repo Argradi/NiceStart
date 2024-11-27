@@ -1,5 +1,6 @@
 package com.JA_Granados.nicestart;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.MeshSpecification;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.graphics.Insets;
@@ -23,6 +25,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 public class Main_activity extends AppCompatActivity {
@@ -55,6 +58,52 @@ public class Main_activity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void showAlertDialogButtonClicked(Main_activity mainActivity) {
+
+        // setup the alert builder
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+
+//        //el dialogo estandar tiene título/icono pero podemos sustituirlo por un XML a medida
+        builder.setTitle("EPAAA!");
+        builder.setMessage("Onde va illo?");
+        builder.setIcon(R.drawable.ic_launcher_foreground);
+        builder.setCancelable(false);
+
+        // un XML a medida para el diálogo
+        //builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
+
+        // add the buttons
+        builder.setPositiveButton("Ir a perfil", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // do something like...
+                Intent intent = new Intent(Main_activity.this, Profile_activity.class);
+                startActivity(intent);
+                dialog.dismiss();
+
+            }
+        });
+
+        builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        builder.setNeutralButton("Salir", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                finish();
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
     protected SwipeRefreshLayout.OnRefreshListener
@@ -123,7 +172,7 @@ public class Main_activity extends AppCompatActivity {
 
         }
         if (id == R.id.item2) {
-            /*final ConstraintLayout mLayout = findViewById(R.id.item2);
+            final ConstraintLayout mLayout = findViewById(R.id.main);
             Snackbar snackbar = Snackbar
                     .make(mLayout, "fancy a Snack while you refresh?", Snackbar.LENGTH_LONG)
                     .setAction("UNDO", new View.OnClickListener() {
@@ -133,9 +182,9 @@ public class Main_activity extends AppCompatActivity {
                             snackbar1.show();
                         }
                     });
-            snackbar.show();*/
-            Toast toast = Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
-            toast.show();
+            snackbar.show();
+          //  Toast toast = Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
+            //toast.show();
         }
 
         if (id == R.id.item3) {
@@ -149,8 +198,9 @@ public class Main_activity extends AppCompatActivity {
         }
 
         if (id == R.id.item5) {
-            Intent intent=new Intent(Main_activity.this,Profile_activity.class);
-            startActivity(intent);
+            //Intent intent=new Intent(Main_activity.this,Profile_activity.class);
+            //startActivity(intent);
+            showAlertDialogButtonClicked(Main_activity.this);
         }
 
         return super.onOptionsItemSelected(item);
