@@ -33,6 +33,10 @@ public class Splash_activity extends AppCompatActivity {
         Animation myanim2 = AnimationUtils.loadAnimation(this, R.anim.aparecer);
         texto.startAnimation(myanim2);
 
+        TextView diego =findViewById(R.id.Diego);
+        Animation myanim3 = AnimationUtils.loadAnimation(this, R.anim.confeti);
+        diego.startAnimation(myanim3);
+
         ImageView mfondo= findViewById(R.id.fondo);
 
         Glide.with(this)
