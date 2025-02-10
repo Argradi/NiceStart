@@ -41,7 +41,7 @@ public class Splash_activity extends AppCompatActivity {
 
         Glide.with(this)
                 .load("https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
-//                .transition(DrawableTransitionOptions.withCrossFade(1000))
+//               .transition(DrawableTransitionOptions.withCrossFade(1000))
                 .centerCrop()
 //            .circleCrop()
 //            .placeholder(new ColorDrawable(this.getResources().getColor(R.color.white)))
